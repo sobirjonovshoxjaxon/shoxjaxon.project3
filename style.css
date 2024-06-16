@@ -1,0 +1,763 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color-pink: rgb(221, 4, 113);
+}
+
+.animate__animated .animate__jackInTheBox 
+
+section#homepage{
+    height: 100vh;
+    width: 100%;
+}
+
+section#homepage .home-main{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(45, 152, 245, 0.5),rgba(45, 152, 245, 0.5)), url(img/homemain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+section#homepage .home-main h1{
+    font: 700 60px sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#homepage .home-main p{
+    font: 500 18px sans-serif;
+    width: 44%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    line-height: 35px;
+}
+
+section#homepage .home-main .btn{
+    background-color: var(--bg-color-pink);
+    font: 700 17px sans-serif;
+    padding: 11px 15px;
+}
+
+section#homepage .navbar{
+    height: 10vh;
+}
+
+section#homepage .navbar .navbar-brand{
+    font: 600 25px sans-serif;
+}
+
+section#homepage .navbar .nav-item .nav-link{
+    font: 500 17px sans-serif;
+}
+
+section#homepage .navbar .nav-link.active{
+    color: var(--bg-color-pink);
+}
+
+
+
+/* section Services */
+
+
+section#Services{
+    padding: 80px 0;
+}
+
+section#Services h1{
+    font: 700 40px sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-line{
+    height: 3px;
+    background-color: grey;
+    width: 10%;
+    margin: 0 auto;
+}
+
+section#Services .cards{
+    margin-top: 60px;
+}
+
+section#Services .cards .card .square{
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-color-pink);
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#Services .cards .card .square i{
+    font-size: 25px;
+}
+
+section#Services .cards .card h3{
+    font: 500 23px sans-serif;
+    margin-top: 10px;
+}
+
+section#Services .cards .card p{
+    font: 500 17px sans-serif;
+    color: grey;
+}
+
+section#Services .cards .card{
+    padding: 20px;
+    border: none;
+}
+
+/* section:Portfolio */
+section#Portfolio .image{
+    position: relative;
+}
+section#Portfolio .image img{
+    width: 100%;
+    height: 100%;
+}
+
+section#Portfolio .image .text{
+    position: absolute;
+    color: white;
+    background-image: linear-gradient(rgba(116, 4, 138, 0.8),rgba(116, 4, 138, 0.8));
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    padding: 0 0 10px 30px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+section#Portfolio .image:hover .text{
+    opacity: 1;
+}
+
+section#Portfolio .row{
+    --bs-gutter-x: 0rem;
+}
+
+section#Features{
+    padding: 80px 0;
+}
+
+section#Features h1{
+    text-align: center;
+}
+
+section#Features .circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--bg-color-pink);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+section#Features .block{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+section#Features .block .block-text{
+    width: 90%;
+}
+
+section#Features .block h3{
+    text-transform: uppercase;
+    font: 600 20px sans-serif;
+}
+
+/* section:team */
+
+section#team .team-card .team-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+section#team .team-card .team-image{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+section#team .team-card:hover .team-image img{
+    transform: translateY(-60px);
+}
+section#team .team-card .team-text{
+    position: absolute;
+    display: flex;
+    height: 60px;
+    background-color: var(--bg-color-pink);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -60px;
+    color: white;
+    transition: 0.4s;
+}
+
+section#team .team-card:hover .team-text{
+    bottom: 0;
+}
+
+section#team .team-card .team-text .circle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section#team .team-card  .circle:hover{
+    color: black;
+    border: 2px solid black;
+    background: white;
+}
+
+section#team .team-card{
+    padding: 0;
+    height: 600px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+section#team .team-card .team-body{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(6, 6, 193);
+    color: white;
+    height: 200px;
+    overflow: hidden;
+}
+
+section#team .team-card:nth-of-type(2) .team-body:nth-of-type(2){
+    background-color: rgb(86, 1, 86);
+}
+
+section#team .team-card:nth-of-type(4) .team-body:nth-of-type(2){
+    background-color: rgb(86, 1, 86);
+}
+
+section#team  .team-body h3{
+    font: 700 28px sans-serif;
+    text-transform: capitalize;
+}
+
+section#team  .team-body h4{
+    font: 700 16px sans-serif;
+    text-transform: uppercase;
+}
+
+section#team  .team-body .team-line{
+    height: 3px;
+    width: 20%;
+    background-color: grey;
+    margin: 15px auto;
+}
+
+/* section testimonials */
+section#Testimonials{
+    padding: 80px 0;
+}
+
+section#Testimonials .circle{
+    width: 70px;
+    height: 70px;
+}
+
+section#Testimonials .circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+section#Testimonials .nav-link{
+    transition: 0.3s;
+    border: none;
+}
+
+section#Testimonials .nav-link.active{
+    transform: scale(1.2);
+    background-color: transparent;
+}
+
+section#Testimonials .nav.nav-tabs{
+    border: none;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#Testimonials .tab-content .tab-pane{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+section#Testimonials .tab-content .tab-pane p{
+    font: 500 20px sans-serif;
+    color: grey;
+    line-height: 35px;
+    padding-top: 15px;
+}
+
+section#Testimonials .tab-content .tab-pane i{
+    color: var(--bg-color-pink);
+}
+
+section#Testimonials .tab-content .tab-pane h3{
+    font: 600 25px sans-serif;
+}
+
+section#Testimonials .tab-content .tab-pane h4{
+    font: 600 14px sans-serif;
+    color: grey;
+}
+
+/* section Partners */
+
+section#Partners{
+    padding: 80px 0;
+    background-color: grey;
+}
+
+section#Partners article img{
+    width: 200px;
+    background-color: none;
+}
+
+section#Partners article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section contact */
+
+section#Contact{
+    padding: 80px 0;
+}
+
+section#Contact .contact-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+section#Contact .contact-form{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 150px;
+}
+
+section#Contact .contact-form input{
+    width: 600px;
+}
+
+section#Contact .contact-form input:focus{
+    box-shadow: none;
+    border: 1px solid var(--bg-color-pink);
+}
+
+section#Contact .contact-form textarea:focus{
+    box-shadow: none;
+    border: 1px solid var(--bg-color-pink);
+}
+
+section#Contact .contact-form button{
+    background-color: var(--bg-color-pink);
+    color: white;
+    cursor: pointer;
+    border: 1px solid var(--bg-color-pink);
+
+}
+
+/* section something */
+section#something{
+    padding: 50px 0;
+    background-color: var(--bg-color-pink);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+section#something h3{
+    font: 700 30px sans-serif;
+    text-transform: uppercase;
+}
+
+section#something .btn{
+    font: bold 20px sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 15px 20px;
+    color: black;
+}
+
+section#something .btn:hover{
+    color: black;
+}
+
+/* section footer */
+section#Footer{
+    padding: 80px 0;
+}
+
+section#Footer article h3{
+    text-transform: uppercase;
+    font: 600 25px sans-serif;
+}
+
+section#Footer .Amaliyot .icons{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#Footer .Amaliyot .icons i{
+    color: grey;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+section#Footer .Amaliyot .icons i:hover{
+    color: var(--bg-color-pink);
+}
+
+section#Footer .Amaliyot p{
+    color: grey;
+}
+
+section#Footer article a{
+    display: block;
+    text-decoration: none;
+    color: grey;
+    transition: 0.5s;
+}
+
+section#Footer article a:hover{
+    color: var(--bg-color-pink);
+}
+
+section#Footer article p{
+    color: grey;
+}
+
+
+
+
+
+
+@media screen and (min-width: 400px) and (max-width: 576px){
+    section#homepage .home-main h1{
+        font: 600 30px sans-serif;
+        width: 80%;
+    }
+
+    section#homepage .home-main p{
+        font: 500 14px sans-serif;
+        width: 84%;
+        margin: 10px auto 0 auto;
+        line-height: 22px;
+    }
+
+    section#homepage .home-main .btn{
+        font: 500 14px sans-serif;
+        padding: 7px 10px;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    section#Services h1{
+        font: 600 30px sans-serif;
+    }
+
+    section#Services .cards{
+        margin-top: 40px;
+    }
+
+    section#Services .cards .card .square{
+        width: 40px;
+        height: 40px;
+    }
+
+    section#Services .cards .card .square i{
+        font-size: 18px;
+    }
+
+    section#Services .cards .card h3{
+        font: 500 20px sans-serif;
+        margin-top: 10px;
+    }
+
+    section#Services .cards .card p{
+        font: 500 15px sans-serif;
+        color: grey;
+    }
+
+    section#team  .team-body h3{
+        font: 700 23px sans-serif;
+    }
+    
+    section#team  .team-body h4{
+        font: 700 14px sans-serif;
+    }
+
+    section#team  .team-body p{
+        font: 500 14px sans-serif;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+
+    section#Testimonials .tab-content .tab-pane p{
+        line-height: 25px;
+        width: 100%;
+    }
+
+    section#Testimonials .tab-content .tab-pane h3{
+        font: 600 23px sans-serif;
+    }
+    
+    section#Testimonials .tab-content .tab-pane h4{
+        font: 600 13px sans-serif;
+    }
+
+    section#Contact .contact-image img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    section#Contact .contact-form{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 0;
+    }
+    
+    section#Contact .contact-form input{
+        width: 300px;
+    }
+
+    section#Footer article{
+        margin: 30px 0;
+    }
+
+    section#Footer article h3{
+        font: 600 23px sans-serif;
+    }
+
+    section#something h3{
+        font: 700 23px sans-serif;
+    }
+    
+    section#something .btn{
+        font: bold 17px sans-serif;
+        padding: 15px 20px;
+    }
+}
+
+
+@media screen and (min-width:  577px) and (max-width: 768px){
+    section#homepage .home-main h1{
+        font: 600 40px sans-serif;
+        width: 85%;
+    }
+
+    section#homepage .home-main p{
+        font: 500 17px sans-serif;
+        width: 84%;
+        margin: 15px auto 0 auto;
+        line-height: 25px;
+    }
+
+    section#homepage .home-main .btn{
+        font: 500 17px sans-serif;
+        padding: 10px 13px;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    section#Services h1{
+        font: 600 35px sans-serif;
+    }
+
+    section#Services .cards{
+        margin-top: 50px;
+    }
+
+    section#Services .cards .card .square{
+        width: 45px;
+        height: 45px;
+    }
+
+    section#Services .cards .card .square i{
+        font-size: 22px;
+    }
+
+    section#Services .cards .card h3{
+        font: 500 22px sans-serif;
+    }
+
+    section#Services .cards .card p{
+        font: 500 16px sans-serif;
+        color: grey;
+    }
+
+    section#Testimonials .tab-content .tab-pane p{
+        line-height: 25px;
+        width: 100%;
+    }
+
+    section#Testimonials .tab-content .tab-pane h3{
+        font: 600 25px sans-serif;
+    }
+    
+    section#Testimonials .tab-content .tab-pane h4{
+        font: 600 14px sans-serif;
+    }
+
+    section#Contact .contact-form{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 0;
+    }
+    
+    section#Contact .contact-form input{
+        width: 400px;
+    }
+
+    section#Footer article h3{
+        font: 600 25px sans-serif;
+    }
+
+    section#something h3{
+        font: 700 25px sans-serif;
+    }
+    
+    section#something .btn{
+        font: bold 18px sans-serif;
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (min-width:  769px) and (max-width: 992px){
+    section#homepage .home-main h1{
+        font: 600 50px sans-serif;
+        width: 93%;
+    }
+
+    section#homepage .home-main p{
+        font: 500 18px sans-serif;
+        width: 84%;
+        margin: 20px auto 0 auto;
+        line-height: 25px;
+    }
+
+    section#homepage .home-main .btn{
+        font: 500 17px sans-serif;
+        padding: 13px 14px;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    
+    section#Services h1{
+        font: 600 40px sans-serif;
+    }
+
+    section#Contact .contact-form{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 0;
+    }
+    
+    section#Contact .contact-form input{
+        width: 500px;
+    }
+
+    section#something h3{
+        font: 700 25px sans-serif;
+    }
+    
+    section#something .btn{
+        font: bold 18px sans-serif;
+        padding: 15px 20px;
+    }
+}
+
+
+@media screen and (min-width:  993px) and (max-width: 1200px){
+    section#homepage .home-main h1{
+        width: 93%;
+    }
+
+    section#homepage .home-main p{
+        width: 60%;
+        line-height: 28px;
+    }
+
+    section#Contact .contact-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section#Contact .contact-form input{
+        width: 500px;
+    }
+
+    section#Footer article h3{
+        font: 600 23px sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
